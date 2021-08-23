@@ -17,7 +17,7 @@ export default class Book extends Component {
               }}
             />
             <div className="book-shelf-changer">
-              <select onChange={(e) => this.props.handleSelect(item, e.target.value)} value={item.shelf}>
+              <select onChange={(e) => this.props.handleSelect(item, e.target.value)} value={item.shelf || "none"}>
                 <option value="move" disabled>
                   Move to...
                 </option>
