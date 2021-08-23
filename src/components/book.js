@@ -13,7 +13,7 @@ export default class Book extends Component {
               style={{
                 width: 128,
                 height: 193,
-                backgroundImage:`url(${item.imageLinks.thumbnail})`,
+                backgroundImage:item.imageLinks ? `url(${item.imageLinks.thumbnail})` : "",
               }}
             />
             <div className="book-shelf-changer">
